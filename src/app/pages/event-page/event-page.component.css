@@ -1,0 +1,11 @@
+.example-card {
+  max-width: 500px;
+  margin: 15px;
+}
+
+.event-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+  justify-content: center;
+}

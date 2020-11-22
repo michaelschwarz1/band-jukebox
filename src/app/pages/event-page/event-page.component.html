@@ -1,0 +1,22 @@
+<div class="event-container">
+  <div *ngFor="let event of events" class="event-list">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <!-- <div mat-card-avatar class="event-date">{{event.date | date: 'MMM/dd' }}</div> -->
+        <mat-card-title>{{event.name}}</mat-card-title>
+        <mat-card-subtitle>{{event.date | date: 'MMM/dd'}} @ {{event.location}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{event.imgUrl}}" alt="Event Photo" height="200">
+      <mat-card-content>
+        <p>
+          {{event.description}}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+        <button mat-button>ADD TO CALENDAR</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

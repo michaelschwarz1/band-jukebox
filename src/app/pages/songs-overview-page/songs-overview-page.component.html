@@ -1,0 +1,10 @@
+<mat-selection-list #songs class="song-list">
+  <mat-list-option *ngFor="let song of songList">
+    {{song}}
+  </mat-list-option>
+</mat-selection-list>
+
+<p>
+  Songs selected: {{songs.selectedOptions.selected.length}}
+</p>
+<button mat-raised-button>Vote</button>
